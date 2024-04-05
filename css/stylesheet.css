@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+@font-face{
+	font-family: 'Inter Semibold';
+	src: url("../fonts/Inter-SemiBold.woff") format('woff');
+	font-style: normal;
+	font-weight: 600;
+}
+
+@font-face{
+	font-family: 'Inter Regular';
+	src: url("../fonts/Inter-Regular.woff") format('woff');
+	font-style: normal;
+	font-weight: 400;
+}
+/*############################## GENERAL ##############################*/
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	width: 100vw;
+	height: 100%;
+	margin:0px;
+	padding: 0px;
+}
+
+
+
+/*############################################################################*/
+/*############################## TABLET VERSION ##############################*/
+/*############################################################################*/
+
+@media (min-width: 768px) and (max-width: 1023px) {}
+
+/*############################################################################*/
+/*############################## MOBILE VERSION ##############################*/
+/*############################################################################*/
+@media screen and (max-width:480px) {}
