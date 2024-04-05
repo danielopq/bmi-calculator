@@ -22,10 +22,43 @@
 body{
 	width: 100vw;
 	height: 100%;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
 	margin:0px;
 	padding: 0px;
 }
 
+body *{
+	border: solid 1px red;
+}
+/*############################## HEADER ##############################*/
+
+header{
+	width: 1440px;
+	height: 737px;
+	padding: 0px 24px;
+}
+
+#intro{
+	width: 978px;
+	height: inherit;
+}
+#calculator{
+	width: 564px;
+	height: 484px;
+	position:absolute;
+	z-index: 1;
+	top: 166px;
+	margin-left: 736px;
+}
+/*############################## MAIN ##############################*/
+
+main{
+	width: 1392px;
+	height: 1907px;
+	margin:196px auto 119px auto;
+}
 
 
 /*############################################################################*/
