@@ -108,7 +108,7 @@ main{
 	justify-content: flex-start;
 	margin: 0px auto 119px auto;
 }
-
+/*------------------------ EXPLANATION ------------------------*/
 #explanation{
 	width: 1160px;
 	height: 533px;
@@ -136,11 +136,48 @@ main{
 	height: 168px;
 	margin: 35px 0px 0px;
 }
-#tips{
+/*------------------------ HEALTH TIPS ------------------------*/
+#healthTips{
 	width: 1392px;
 	height: 402px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 	margin-top: 96px;
+	padding: 72px 116px 0px;
 }
+.tip{
+	width: 365px;
+	height: 234px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+.tip-pic{
+	width: 64px;
+	height: 64px;
+}
+.tip-info{
+	width: inherit;
+	height: 125px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	text-align: left;
+	margin-top: 45px;
+}
+.tip-info h2{
+	width: inherit;
+	height: 29px;
+	margin: 0px;
+	padding: 0px;
+}
+.tip-info p{
+	width: inherit;
+	height: 72px;
+	margin: 24px 0px 0px;
+}
+/*------------------------ LIMITATIONS ------------------------*/
 #limitations{
 	width: 1160px;
 	height: 704px;

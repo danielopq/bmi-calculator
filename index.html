@@ -7,33 +7,55 @@
 <title>BMI Calculator</title>
 </head>
 <body>
-	<!--############################## HEADER ##############################-->
-	<header>
-		<div id="intro">
-			<div id="intro-logo"></div>
-			<h1 id="intro-title"></h1>
-			<p id="intro-text"></p>
+<!--############################## HEADER ##############################-->
+<header>
+	<div id="intro">
+		<div id="intro-logo"></div>
+		<h1 id="intro-title"></h1>
+		<p id="intro-text" class="textMedium"></p>
+	</div>
+	<div id="calculator">
+		<div id="cal-mainLabel">Enter your details below</div>
+		<div id="cal-metric"></div>
+		<div id="cal-imperial"></div>
+		<div id="cal-height"></div>
+		<div id="cal-weight"></div>
+		<div id="cal-result"></div>
+	</div>
+</header>
+<!--############################## MAIN ##############################-->
+<main>
+	<div id="explanation">
+		<div id="exp-mainPic"></div>
+		<div id="exp-text">
+			<h2></h2>
+			<p class="textMedium"></p>
 		</div>
-		<div id="calculator">
-			<div id="cal-mainLabel">Enter your details below</div>
-			<div id="cal-metric"></div>
-			<div id="cal-imperial"></div>
-			<div id="cal-height"></div>
-			<div id="cal-weight"></div>
-			<div id="cal-result"></div>
-		</div>
-	</header>
-	<!--############################## MAIN ##############################-->
-	<main>
-		<div id="explanation">
-			<div id="exp-mainPic"></div>
-			<div id="exp-text">
+	</div>
+	<div id="healthTips">
+		<div id="tip-eating" class="tip">
+			<div id="eating-pic" class="tip-pic"></div>
+			<div class="tip-info">
 				<h2></h2>
-				<p></p>
+				<p class="textMedium"></p>
 			</div>
 		</div>
-		<div id="tips"></div>
-		<div id="limitations"></div>
-	</main>
+		<div id="tip-exercise" class="tip">
+			<div id="exercise-pic" class="tip-pic"></div>
+			<div class="tip-info">
+				<h2></h2>
+				<p class="textMedium"></p>
+			</div>
+		</div>
+		<div id="tip-sleeping" class="tip">
+			<div id="sleeping-pic" class="tip-pic"></div>
+			<div class="tip-info">
+				<h2></h2>
+				<p class="textMedium"></p>
+			</div>
+		</div>
+	</div>
+	<div id="limitations"></div>
+</main>
 </body>
 </html>
