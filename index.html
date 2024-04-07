@@ -11,15 +11,33 @@
 <header>
 	<div id="intro">
 		<div id="intro-logo"></div>
-		<h1 id="intro-title">Body Mass Index<br>Calculator</h1>
-		<p id="intro-text" class="textMedium"></p>
+		<h1 id="intro-title">Body Mass<br>Index Calculator</h1>
+		<p id="intro-text" class="textMedium">Better understand your weight in relation to your height using our body mass index (BM) calculator. While BMI is not the sole determinant of a healthy weight, it offers a valuable starting point to evaluate your overall health and well-being.</p>
 	</div>
 	<div id="calculator">
-		<div id="cal-mainLabel">Enter your details below</div>
-		<div id="cal-metric"></div>
-		<div id="cal-imperial"></div>
-		<div id="cal-height"></div>
-		<div id="cal-weight"></div>
+		<h3 id="cal-mainLabel">Enter your details below</h3>
+		<div id="cal-metric" class="system-div">
+			<input name="system" id="metric-rad" type="radio" enabled>
+			<label for="metric-rad" class="textMediumBold">Metric</label>
+		</div>
+		<div id="cal-imperial" class="system-div">
+			<input name="system" id="imperial-rad" type="radio">
+			<label for="imperial-rad" class="textMediumBold">Imperial</label>
+		</div>
+		<div id="cal-height">
+			<label class="textSmall">Height</label>
+			<div class="txtField-border">
+				<input type="text">
+				<p>cm</p>
+			</div>
+		</div>
+		<div id="cal-weight">
+			<label class="textSmall">Weight</label>
+			<div class="txtField-border">
+				<input type="text">
+				<p>Kg</p>
+			</div>
+		</div>
 		<div id="cal-result"></div>
 	</div>
 </header>
