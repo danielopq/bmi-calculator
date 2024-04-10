@@ -108,7 +108,6 @@ header{
 	flex-direction: column;
 	align-items: flex-start;
 	padding: 74px 0px 0px 116px;
-	/*background: linear-gradient(to left,#253347,#5E6E85,#345FF6,white,#D8E2E7);*/
 	background: linear-gradient(to left,#D6E6FE,#D6FCFE);
 }
 
@@ -161,6 +160,8 @@ header{
 }
 #cal-result{
 	grid-area: result;
+	background-color: #345FF6;
+	border-radius: 16px 83px 83px 16px;
 }
 .system-div{
 	display: flex;
