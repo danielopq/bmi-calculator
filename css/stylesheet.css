@@ -164,6 +164,7 @@ header{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	text-align: left;
 	padding: 32px;
 }
 
@@ -173,7 +174,7 @@ header{
 #result-welcome{
 	width: 436px;
 	height: 66px;
-	display: flex;
+	display: none;
 	flex-direction: column;
 	justify-content:flex-start;
 	
@@ -194,7 +195,20 @@ header{
 }
 
 #result-report{
-	display:none;
+	width: 436px;
+	height: 102px;
+	display:flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: row;
+}
+#result-report > *{
+	width: 206px;
+	height: inherit;
+}
+#report-container{
+	
+	
 }
 .system-div{
 	display: flex;
