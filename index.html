@@ -14,6 +14,7 @@
 		<h1 id="intro-title">Body Mass<br>Index Calculator</h1>
 		<p id="intro-text" class="textMedium">Better understand your weight in relation to your height using our body mass index (BM) calculator. While BMI is not the sole determinant of a healthy weight, it offers a valuable starting point to evaluate your overall health and well-being.</p>
 	</div>
+	<!-- ---------------- CALCULATOR ---------------- -->
 	<div id="calculator">
 		<h3 id="cal-mainLabel">Enter your details below</h3>
 		<div id="cal-metric" class="system-div">
@@ -39,11 +40,17 @@
 			</div>
 		</div>
 		<div id="cal-result">
-			<div id="result-overall">
-				<p class="textSmall">Your BMI is...</p>
-				<p id="bmi-numeric">23.z</p>
+			<div id="result-welcome">
+				<h3 id="welcome-heading">Welcome!</h3>
+				<p id="welcome-message" class="textSmall">Enter your height and weight and you’ll see your BMI result here</p>
 			</div>
-			<p id="result-idealWeight"></p>
+			<div id="result-report">
+				<div id="report-container">
+					<p class="textSmall">Your BMI is...</p>
+					<p id="BMI">23.z</p>
+				</div>
+				<p id="report-idealWeight"></p>
+			</div>
 		</div>
 	</div>
 </header>
@@ -79,6 +86,7 @@
 			</div>
 		</div>
 	</div>
+	<!-- ---------------- LIMITATIONS ---------------- -->
 	<div id="limitations">
 		<div id="limit-info">
 			<h2>Limitations of BMI</h2>

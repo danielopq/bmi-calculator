@@ -129,7 +129,7 @@ header{
 }
 #calculator{
 	width: 564px;
-	height: 484px;
+	height: 448px;
 	position:absolute;
 	z-index: 1;
 	top: 181px;
@@ -137,12 +137,11 @@ header{
 	padding: 32px;
 	display: grid;
 	grid-template-columns: 238px 238px;
-	grid-template-rows: 29px 31px 98px 166px;
+	grid-template-rows: 29px 31px 98px 130px;
 	grid-template-areas: "mainLabel mainLabel""metric imperial""height weight""result result";
 	grid-row-gap: 32px;
 	grid-column-gap: 24px;
 }
-
 #cal-mainLabel{
 	grid-area: mainLabel;
 }
@@ -162,6 +161,40 @@ header{
 	grid-area: result;
 	background-color: #345FF6;
 	border-radius: 16px 83px 83px 16px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 32px;
+}
+
+#cal-result p{
+	color: white !important;
+}
+#result-welcome{
+	width: 436px;
+	height: 66px;
+	display: flex;
+	flex-direction: column;
+	justify-content:flex-start;
+	
+}
+
+#result-welcome h3{
+	width: inherit;
+	height: 29px;
+	color: white !important;
+	line-height: 29px !important;
+}
+
+#result-welcome p{
+	width: inherit;
+	height: 21px;
+	line-height: 21px;
+	margin-top: 16px;
+}
+
+#result-report{
+	display:none;
 }
 .system-div{
 	display: flex;
