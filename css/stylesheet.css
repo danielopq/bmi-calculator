@@ -52,6 +52,7 @@ input[type="text"]{
 	height: 29px;
 	font: 600 24px/110% 'Inter Semibold';
 	color:#253347;
+	border:none;
 }
 input[type="text"]{
 	outline: none;
@@ -108,7 +109,8 @@ header{
 	flex-direction: column;
 	align-items: flex-start;
 	padding: 74px 0px 0px 116px;
-	background: linear-gradient(to left,#D6E6FE,#D6FCFE);
+	background: linear-gradient(-45deg,hsla(216,95.2%,91.8%,1),hsla(183,95.2%,91.8%,0));
+	border-radius: 0px 0px 35px 35px;
 }
 
 #intro-logo{
@@ -129,7 +131,7 @@ header{
 }
 #calculator{
 	width: 564px;
-	height: 448px;
+	height: 481px;
 	position:absolute;
 	z-index: 1;
 	top: 181px;
@@ -137,10 +139,13 @@ header{
 	padding: 32px;
 	display: grid;
 	grid-template-columns: 238px 238px;
-	grid-template-rows: 29px 31px 98px 130px;
+	grid-template-rows: 29px 31px 98px 166px;
 	grid-template-areas: "mainLabel mainLabel""metric imperial""height weight""result result";
 	grid-row-gap: 32px;
 	grid-column-gap: 24px;
+	border-radius: 16px;
+	background-color: white;
+	box-shadow: 16px 32px 56px 0px hsla(210.9,40%,68.6%,0.25);
 }
 #cal-mainLabel{
 	grid-area: mainLabel;
@@ -177,7 +182,6 @@ header{
 	display: none;
 	flex-direction: column;
 	justify-content:flex-start;
-	
 }
 
 #result-welcome h3{
@@ -207,8 +211,20 @@ header{
 	height: inherit;
 }
 #report-container{
+	display:flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+#report-container{
 	
-	
+}
+#BMI-text{
+	margin: 0px;
+}
+#BMI-number{
+	font: 600 64px/110% 'Inter Semibold';
+	margin:0px;
 }
 .system-div{
 	display: flex;
