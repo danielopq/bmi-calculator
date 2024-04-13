@@ -39,7 +39,7 @@ h1{
 	font: 600 64px/110% 'Inter Semibold';
 }
 h2{
-	font: 600 48px/110% 'Inter Semibold';
+	font: 600 45px/110% 'Inter Semibold';
 }
 h3{
 	font: 600 24px/110% 'Inter Semibold';
@@ -259,6 +259,7 @@ main{
 	align-items: center;
 	justify-content: flex-start;
 	margin: 0px auto 119px auto;
+	background: url("../images/pattern-curved-line-left.svg") 1215px 0px/86px no-repeat;
 }
 /*------------------------ EXPLANATION ------------------------*/
 #explanation{
@@ -272,6 +273,7 @@ main{
 #exp-mainPic{
 	width: 564px;
 	height: inherit;
+	background: url("../images/image-man-eating.webp") center/563px no-repeat;
 }
 #exp-text{
 	width: 465px;
