@@ -29,7 +29,7 @@ body{
 	padding: 0px;
 }
 body *{
-	border: solid 1px red;
+	/*border: solid 1px red;*/
 }
 h1,h2,h3,h4{
 	color:#253347;
@@ -298,6 +298,8 @@ main{
 	justify-content: space-between;
 	margin-top: 96px;
 	padding: 72px 116px 0px;
+	border-radius: 35px;
+	background: linear-gradient(to left,hsla(216,95.2%,91.8%,0.2),hsla(183,95.2%,91.8%,0));
 }
 #eating-pic{
 	background: url("../images/icon-eating.svg") center/64px no-repeat;
