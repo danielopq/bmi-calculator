@@ -42,7 +42,7 @@ h2{
 	font: 600 45px/110% 'Inter Semibold';
 }
 h3{
-	font: 600 24px/110% 'Inter Semibold';
+	font: 600 24px/1 'Inter Semibold';
 }
 h4{
 	font: 600 20px/110% 'Inter Semibold';
@@ -298,6 +298,15 @@ main{
 	justify-content: space-between;
 	margin-top: 96px;
 	padding: 72px 116px 0px;
+}
+#eating-pic{
+	background: url("../images/icon-eating.svg") center/64px no-repeat;
+}
+#exercise-pic{
+	background: url("../images/icon-exercise.svg") center/64px no-repeat;
+}
+#sleeping-pic{
+	background: url("../images/icon-sleep.svg") center/64px no-repeat;
 }
 .tip{
 	width: 365px;
