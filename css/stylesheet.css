@@ -178,6 +178,7 @@ header{
 	align-items: center;
 	text-align: left;
 	padding: 32px;
+	background: linear-gradient(to right, #345FF6,#587DFF)
 }
 
 #cal-result p{
