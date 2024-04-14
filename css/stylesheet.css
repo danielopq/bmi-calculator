@@ -37,12 +37,15 @@ h1,h2,h3,h4{
 }
 h1{
 	font: 600 64px/110% 'Inter Semibold';
+	letter-spacing: -0.05em;
 }
 h2{
-	font: 600 45px/110% 'Inter Semibold';
+	font: 600 48px/110% 'Inter Semibold';
+	letter-spacing: -0.05em;
 }
 h3{
 	font: 600 24px/1 'Inter Semibold';
+	letter-spacing: -0.05em;
 }
 h4{
 	font: 600 20px/110% 'Inter Semibold';
@@ -135,7 +138,7 @@ header{
 	position:absolute;
 	z-index: 1;
 	top: 181px;
-	margin-left: 736px;
+	margin-left: 712px;
 	padding: 32px;
 	display: grid;
 	grid-template-columns: 238px 238px;
@@ -259,7 +262,7 @@ main{
 	align-items: center;
 	justify-content: flex-start;
 	margin: 0px auto 119px auto;
-	background: url("../images/pattern-curved-line-left.svg") 1215px 0px/86px no-repeat;
+	background: url("../images/pattern-curved-line-left.svg") 1191px 0px/86px no-repeat;
 }
 /*------------------------ EXPLANATION ------------------------*/
 #explanation{
