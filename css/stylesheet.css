@@ -60,6 +60,10 @@ input[type="text"]{
 input[type="text"]{
 	outline: none;
 }
+::placeholder {
+	color: #D8E2E7;
+	opacity: 1;
+}
 input[type="radio"]{
 	appearance: none;
 	width: 31px;
@@ -182,7 +186,7 @@ header{
 #result-welcome{
 	width: 436px;
 	height: 66px;
-	display: none;
+	display: flex;
 	flex-direction: column;
 	justify-content:flex-start;
 }
@@ -204,7 +208,7 @@ header{
 #result-report{
 	width: 436px;
 	height: 102px;
-	display:flex;
+	display:none;
 	align-items: center;
 	justify-content: space-between;
 	flex-direction: row;
