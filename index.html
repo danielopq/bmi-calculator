@@ -31,14 +31,14 @@
 		<div id="cal-metricSystem">
 			<div class="parameter">
 				<label class="textSmall parameterLabel">Height</label>
-				<div class="txtField-border">
+				<div id="cm-container" class="txtField-border">
 					<input id="cm" type="text" placeholder="0">
 					<p>cm</p>
 				</div>
 			</div>
 			<div class="parameter">
 				<label class="textSmall parameterLabel">Weight</label>
-				<div class="txtField-border">
+				<div id="kg-container" class="txtField-border">
 					<input id="kg" type="text" placeholder="0">
 					<p>Kg</p>
 				</div>
@@ -48,13 +48,13 @@
 			<div>
 				<div class="parameter">
 					<label class="textSmall parameterLabel">Height</label>
-					<div class="txtField-border">
+					<div id="ft-container" class="txtField-border">
 						<input id="ft" type="text" placeholder="0">
 						<p>ft</p>
 					</div>
 				</div>
 				<div class="parameter">
-					<div class="txtField-border">
+					<div id="in-container" class="txtField-border">
 						<input id="in" type="text" placeholder="0">
 						<p>in</p>
 					</div>
@@ -63,14 +63,14 @@
 			<div>
 				<div class="parameter">
 					<label class="textSmall parameterLabel">Weight</label>
-					<div class="txtField-border">
+					<div id="st-container" class="txtField-border">
 						<input id="st" type="text" placeholder="0">
 						<p>st</p>
 					</div>
 				</div>
 				<div class="parameter">
-					<div class="txtField-border">
-						<input  id="lbs" type="text" placeholder="0">
+					<div id="lbs-container" class="txtField-border">
+						<input  id="lbs" type="text" placeholder="0" value="0">
 						<p>lbs</p>
 					</div>
 				</div>
@@ -84,9 +84,9 @@
 			<div id="result-report">
 				<div id="report-container">
 					<p id="BMI-text" class="textSmall">Your BMI is...</p>
-					<p id="BMI-number">23.z</p>
+					<p id="BMI-number"></p>
 				</div>
-				<p id="report-idealWeight" class="textSmall"> Your BMI suggests you’re a healthy weight. Your ideal weight is between <b>63.3kgs - 85.2kgs.</b> </p>
+				<p id="report-final" class="textSmall"> Your BMI suggests you’re a healthy weight. Your ideal weight is between <b>63.3kgs - 85.2kgs.</b> </p>
 			</div>
 		</div>
 	</div>
