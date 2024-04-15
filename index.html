@@ -11,32 +11,69 @@
 <header>
 	<div id="intro">
 		<div id="intro-logo"></div>
-		<h1 id="intro-title">Body Mass<br>Index Calculator</h1>
+		<h1 id="intro-title">Body Mass<br>
+			Index Calculator</h1>
 		<p id="intro-text" class="textMedium">Better understand your weight in relation to your height using our body mass index (BM) calculator. While BMI is not the sole determinant of a healthy weight, it offers a valuable starting point to evaluate your overall health and well-being.</p>
 	</div>
 	<!-- ---------------- CALCULATOR ---------------- -->
 	<div id="calculator">
 		<h3 id="cal-mainLabel">Enter your details below</h3>
-		<div id="cal-metric" class="system-div">
-			<input name="system" id="metric-rad" type="radio" value="metric" checked>
-			<label for="metric-rad" class="textMediumBold">Metric</label>
-		</div>
-		<div id="cal-imperial" class="system-div">
-			<input name="system" id="imperial-rad" value="imperial" type="radio">
-			<label for="imperial-rad" class="textMediumBold">Imperial</label>
-		</div>
-		<div id="cal-height">
-			<label class="textSmall">Height</label>
-			<div class="txtField-border">
-				<input type="text" placeholder="0">
-				<p>cm</p>
+		<div id="cal-systemSelect">
+			<div id="metric" class="system-div">
+				<input name="system" id="metric-rad" type="radio" value="metric" checked>
+				<label for="metric-rad" class="textMediumBold">Metric</label>
+			</div>
+			<div id="imperial" class="system-div">
+				<input name="system" id="imperial-rad" value="imperial" type="radio">
+				<label for="imperial-rad" class="textMediumBold">Imperial</label>
 			</div>
 		</div>
-		<div id="cal-weight">
-			<label class="textSmall">Weight</label>
-			<div class="txtField-border">
-				<input type="text" placeholder="0">
-				<p>Kg</p>
+		<div id="cal-metricSystem">
+			<div class="parameter">
+				<label class="textSmall parameterLabel">Height</label>
+				<div class="txtField-border">
+					<input id="cm" type="text" placeholder="0">
+					<p>cm</p>
+				</div>
+			</div>
+			<div class="parameter">
+				<label class="textSmall parameterLabel">Weight</label>
+				<div class="txtField-border">
+					<input id="kg" type="text" placeholder="0">
+					<p>Kg</p>
+				</div>
+			</div>
+		</div>
+		<div id="cal-imperialSystem">
+			<div>
+				<div class="parameter">
+					<label class="textSmall parameterLabel">Height</label>
+					<div class="txtField-border">
+						<input id="ft" type="text" placeholder="0">
+						<p>ft</p>
+					</div>
+				</div>
+				<div class="parameter">
+					<div class="txtField-border">
+						<input id="in" type="text" placeholder="0">
+						<p>in</p>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="parameter">
+					<label class="textSmall parameterLabel">Weight</label>
+					<div class="txtField-border">
+						<input id="st" type="text" placeholder="0">
+						<p>st</p>
+					</div>
+				</div>
+				<div class="parameter">
+					<div class="txtField-border">
+						<input  id="lbs" type="text" placeholder="0">
+						<p>lbs</p>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div id="cal-result">
@@ -49,9 +86,7 @@
 					<p id="BMI-text" class="textSmall">Your BMI is...</p>
 					<p id="BMI-number">23.z</p>
 				</div>
-				<p id="report-idealWeight" class="textSmall">
-					Your BMI suggests you’re a healthy weight. Your ideal weight is between <b>63.3kgs - 85.2kgs.</b>
-				</p>
+				<p id="report-idealWeight" class="textSmall"> Your BMI suggests you’re a healthy weight. Your ideal weight is between <b>63.3kgs - 85.2kgs.</b> </p>
 			</div>
 		</div>
 	</div>
@@ -95,27 +130,33 @@
 			<p class="textMedium">Although BMI is often a practical indicator of healthy weight, it is not suited for every person. Specific groups should carefully consider their BMI outcomes, and in certain cases, the measurement may not be beneficial to use.</p>
 		</div>
 		<div id="limit-gender" class="limit">
-			<div id="gender-head"><h3>Gender</h3></div>
+			<div id="gender-head">
+				<h3>Gender</h3>
+			</div>
 			<p class="textMedium">The development and body fat composition of girls and boys vary with age. Consequently, a child's age and gender are considered when evaluating their BMI.</p>
 		</div>
 		<div id="limit-age" class="limit">
 			<div id="age-head"><img src="images/icon-age.svg" alt=""/>
-			<h3>Age</h3></div>
+				<h3>Age</h3>
+			</div>
 			<p class="textMedium">In aging individuals, increased body fat and muscle loss may cause BMI to underestimate body fat content.</p>
 		</div>
 		<div id="limit-muscle" class="limit">
 			<div id="muscle-head"><img src="images/icon-muscle.svg" alt=""/>
-			<h3>Muscle</h3></div>
+				<h3>Muscle</h3>
+			</div>
 			<p class="textMedium">BMI may misclassify muscular individuals as overweight or obese, as it doesn't differentiate muscle from fat.</p>
 		</div>
 		<div id="limit-pregancy" class="limit">
 			<div id="pregnancy-head"><img src="images/icon-pregnancy.svg" alt=""/>
-			<h3>Pregnancy</h3></div>
+				<h3>Pregnancy</h3>
+			</div>
 			<p class="textMedium">Expectant mothers experience weight gain due to their growing baby. Maintaining a healthy pre-pregnancy BMI is advisable to minimise health risks for both mother and child.</p>
 		</div>
 		<div id="limit-race" class="limit">
 			<div><img src="images/icon-race.svg" alt=""/>
-			<h3>Race</h3></div>
+				<h3>Race</h3>
+			</div>
 			<p class="textMedium">Certain health concerns may affect individuals of some Black and Asian origins at lower BMIs than others. To learn more, it is advised to discuss this with your GP or practice nurse.</p>
 		</div>
 	</div>

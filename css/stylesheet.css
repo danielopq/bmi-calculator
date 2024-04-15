@@ -138,39 +138,54 @@ header{
 }
 #calculator{
 	width: 564px;
-	height: 481px;
 	position:absolute;
 	z-index: 1;
 	top: 181px;
 	margin-left: 712px;
 	padding: 32px;
-	display: grid;
-	grid-template-columns: 238px 238px;
-	grid-template-rows: 29px 31px 98px 166px;
-	grid-template-areas: "mainLabel mainLabel""metric imperial""height weight""result result";
-	grid-row-gap: 32px;
-	grid-column-gap: 24px;
+	display: flex;
+	flex-direction: column;
 	border-radius: 16px;
 	background-color: white;
 	box-shadow: 16px 32px 56px 0px hsla(210.9,40%,68.6%,0.25);
 }
+#calculator > *{
+	width: 500px;
+}
+#calculator > div{
+	margin-top: 32px;
+}
 #cal-mainLabel{
-	grid-area: mainLabel;
+	height: 29px;
+	text-align: left;
 }
-#cal-metric{
-	grid-area: metric;
+#cal-systemSelect{
+	height: 31px;
+	display: flex;
+	flex-direction: row;
 }
-#cal-imperial{
-	imperial: imperial;
+#metric{
+	margin-right: 24px;
 }
-#cal-height{
-	grid-area: height;
+#cal-metricSystem{
+	height: 98px;
+	display: none;
+	flex-direction: row;
+	justify-content: space-between;
 }
-#cal-weight{
-	grid-area: weight;
+#cal-imperialSystem{
+	height: 220px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+#cal-imperialSystem > div{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
 }
 #cal-result{
-	grid-area: result;
 	background-color: #345FF6;
 	border-radius: 16px 83px 83px 16px;
 	display: flex;
@@ -224,9 +239,6 @@ header{
 	align-items: flex-start;
 	justify-content: space-between;
 }
-#report-container{
-	
-}
 #BMI-text{
 	margin: 0px;
 }
@@ -235,11 +247,12 @@ header{
 	margin:0px;
 }
 .system-div{
+	width: 238px;
 	display: flex;
 	align-items: center;
 }
 .txtField-border{
-	width: 100%;
+	width: 238px;
 	height: 69px;
 	display: flex;
 	align-content: center;
@@ -256,6 +269,15 @@ header{
 	color:#345FF6;
 	font: 600 24px/110% 'Inter Semibold';
 	text-align: left;
+}
+.parameter{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	height: 98px;
+}
+.parameterLabel{
+	color:#5E6E85;
 }
 /*############################## MAIN ##############################*/
 
