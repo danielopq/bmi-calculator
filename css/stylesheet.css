@@ -88,6 +88,7 @@ input[type="radio"]:checked {
 }
 input[type="radio"]:hover {
 	cursor: pointer;
+	border-color:#345FF6;
 }
 body p{
 	color:#5E6E85;
@@ -261,6 +262,9 @@ header{
 	border-radius: 12px;
 	margin-top: 8px;
 	padding: 20px 24px;
+}
+.txtField-border:hover{
+	border-color: #345FF6;
 }
 .txtField-border p{
 	width: 40px;
