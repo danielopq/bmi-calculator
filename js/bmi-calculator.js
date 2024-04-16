@@ -107,8 +107,7 @@ function changeMetricSystem(event) {
 	}
 }
 /**
-*<p>Validates if the parameters are 0, blank or contains no mumeric values and initializes the bmi calculator
-</p>
+*<p>Validates if the parameters are 0, blank or contains no mumeric values and initializes the bmi calculator</p>
 *@param event pressed key
 */
 function validateParameters(event) {

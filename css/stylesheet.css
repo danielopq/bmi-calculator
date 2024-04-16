@@ -1,70 +1,66 @@
 @charset "utf-8";
-
 @font-face {
 	font-family: 'Inter Semibold';
 	src: url("../fonts/Inter-SemiBold.woff")format('woff');
 	font-style: normal;
 	font-weight: 600;
 }
-
-@font-face{
+@font-face {
 	font-family: 'Inter Regular';
 	src: url("../fonts/Inter-Regular.woff") format('woff');
 	font-style: normal;
 	font-weight: 400;
 }
 /*############################## GENERAL ##############################*/
-
-*{
+* {
 	box-sizing: border-box;
 }
-
-body{
+body {
 	width: 100vw;
 	height: 100%;
-	display:flex;
+	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin:0px;
+	margin: 0px;
 	padding: 0px;
 }
-body *{
+body * {
 	/*border: solid 1px red;*/
 }
-h1,h2,h3,h4{
-	color:#253347;
-	margin:0px;
+h1, h2, h3, h4 {
+	color: #253347;
+	margin: 0px;
 }
-h1{
+h1 {
 	font: 600 64px/110% 'Inter Semibold';
 	letter-spacing: -0.05em;
 }
-h2{
+h2 {
 	font: 600 48px/110% 'Inter Semibold';
 	letter-spacing: -0.05em;
 }
-h3{
+h3 {
 	font: 600 24px/1 'Inter Semibold';
 	letter-spacing: -0.05em;
 }
-h4{
+h4 {
 	font: 600 20px/110% 'Inter Semibold';
 }
-input[type="text"]{
+input[type="text"] {
 	width: 131px;
 	height: 29px;
 	font: 600 24px/110% 'Inter Semibold';
-	color:#253347;
-	border:none;
+	color: #253347;
+	border: none;
 }
-input[type="text"]{
+input[type="text"] {
 	outline: none;
 }
 ::placeholder {
 	color: #D8E2E7;
 	opacity: 1;
 }
-input[type="radio"]{
+input[type="radio"] {
 	appearance: none;
 	width: 31px;
 	height: 31px;
@@ -80,67 +76,65 @@ input[type="radio"]:checked:before {
 	height: 15px;
 	margin: 8px auto;
 	border-radius: 50%;
-	background-color: hsla(227, 92%, 58%,100%);
+	background-color: hsla(227, 92%, 58%, 100%);
 }
 input[type="radio"]:checked {
-	background-color: hsla(227, 92%, 58%,15%);
-	border:none;
+	background-color: hsla(227, 92%, 58%, 15%);
+	border: none;
 }
 input[type="radio"]:hover {
 	cursor: pointer;
-	border-color:#345FF6;
+	border-color: #345FF6;
 }
-body p{
-	color:#5E6E85;
+body p {
+	color: #5E6E85;
 }
-.textSmall{
+.textSmall {
 	font: 400 14px/150% 'Inter Regular';
 }
-.textMedium{
+.textMedium {
 	font: 400 16px/150% 'Inter Regular';
 }
-.textMediumBold{
+.textMediumBold {
 	font: 400 16px/150% 'Inter Semibold';
 }
 /*############################## HEADER ##############################*/
-
-header{
+header {
 	width: 1440px;
 	height: 737px;
 	padding: 0px 24px;
 }
 /*------------------------ INTRO ------------------------*/
-#intro{
+#intro {
 	width: 978px;
 	height: inherit;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 	padding: 74px 0px 0px 116px;
-	background: linear-gradient(-45deg,hsla(216,95.2%,91.8%,1),hsla(183,95.2%,91.8%,0));
+	background: linear-gradient(-45deg, hsla(216, 95.2%, 91.8%, 1), hsla(183, 95.2%, 91.8%, 0));
 	border-radius: 0px 0px 35px 35px;
 }
-
-#intro-logo{
+#intro-logo {
 	width: 64px;
 	height: 64px;
 	background: url("../images/logo.svg");
 }
-#intro-title{
+#intro-title {
 	width: 564px;
 	height: 140px;
 	margin: 127px 0px 0px;
 	text-align: left;
 }
-#intro-text{
+#intro-text {
 	width: 465px;
 	height: 96px;
 	margin: 35px 0px 0px;
 }
 /*------------------------ CALCULATOR ------------------------*/
-#calculator{
+#calculator {
 	width: 564px;
-	position:absolute;
+	position: absolute;
 	z-index: 1;
 	top: 181px;
 	margin-left: 712px;
@@ -149,45 +143,45 @@ header{
 	flex-direction: column;
 	border-radius: 16px;
 	background-color: white;
-	box-shadow: 16px 32px 56px 0px hsla(210.9,40%,68.6%,0.25);
+	box-shadow: 16px 32px 56px 0px hsla(210.9, 40%, 68.6%, 0.25);
 }
-#calculator > *{
+#calculator > * {
 	width: 500px;
 }
-#calculator > div{
+#calculator > div {
 	margin-top: 32px;
 }
-#cal-mainLabel{
+#cal-mainLabel {
 	height: 29px;
 	text-align: left;
 }
-#cal-systemSelect{
+#cal-systemSelect {
 	height: 31px;
 	display: flex;
 	flex-direction: row;
 }
-#metric{
+#metric {
 	margin-right: 24px;
 }
-#cal-metricSystem{
+#cal-metricSystem {
 	height: 98px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 }
-#cal-imperialSystem{
+#cal-imperialSystem {
 	height: 220px;
 	display: none;
 	flex-direction: column;
 	justify-content: space-between;
 }
-#cal-imperialSystem > div{
+#cal-imperialSystem > div {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
 }
-#cal-result{
+#cal-result {
 	background-color: #345FF6;
 	border-radius: 16px 83px 83px 16px;
 	display: flex;
@@ -195,65 +189,61 @@ header{
 	align-items: center;
 	text-align: left;
 	padding: 32px;
-	background: linear-gradient(to right, #345FF6,#587DFF)
+	background: linear-gradient(to right, #345FF6, #587DFF)
 }
-
-#cal-result p{
+#cal-result p {
 	color: white !important;
 }
-#result-welcome{
+#result-welcome {
 	width: 436px;
 	height: 66px;
 	display: flex;
 	flex-direction: column;
-	justify-content:flex-start;
+	justify-content: flex-start;
 }
-
-#result-welcome h3{
+#result-welcome h3 {
 	width: inherit;
 	height: 29px;
 	color: white !important;
 	line-height: 29px !important;
 }
-
-#result-welcome p{
+#result-welcome p {
 	width: inherit;
 	height: 21px;
 	line-height: 21px;
 	margin-top: 16px;
 }
-
-#result-report{
+#result-report {
 	width: 436px;
 	height: 102px;
-	display:none;
+	display: none;
 	align-items: center;
 	justify-content: space-between;
 	flex-direction: row;
 }
-#result-report > *{
+#result-report > * {
 	width: 206px;
 	height: inherit;
 }
-#report-container{
-	display:flex;
+#report-container {
+	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 	justify-content: space-between;
 }
-#BMI-text{
+#BMI-text {
 	margin: 0px;
 }
-#BMI-number{
+#BMI-number {
 	font: 600 64px/110% 'Inter Semibold';
-	margin:0px;
+	margin: 0px;
 }
-.system-div{
+.system-div {
 	width: 238px;
 	display: flex;
 	align-items: center;
 }
-.txtField-border{
+.txtField-border {
 	width: 238px;
 	height: 69px;
 	display: flex;
@@ -264,29 +254,28 @@ header{
 	margin-top: 8px;
 	padding: 20px 24px;
 }
-.txtField-border:hover{
+.txtField-border:hover {
 	border-color: #345FF6;
 }
-.txtField-border p{
+.txtField-border p {
 	width: 40px;
 	height: 29px;
 	margin: 0px;
-	color:#345FF6;
+	color: #345FF6;
 	font: 600 24px/110% 'Inter Semibold';
 	text-align: left;
 }
-.parameter{
+.parameter {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
 	height: 98px;
 }
-.parameterLabel{
-	color:#5E6E85;
+.parameterLabel {
+	color: #5E6E85;
 }
 /*############################## MAIN ##############################*/
-
-main{
+main {
 	width: 1440px;
 	height: 1907px;
 	display: flex;
@@ -297,7 +286,7 @@ main{
 	background: url("../images/pattern-curved-line-left.svg") 1191px 0px/86px no-repeat;
 }
 /*------------------------ EXPLANATION ------------------------*/
-#explanation{
+#explanation {
 	width: 1160px;
 	height: 533px;
 	margin-top: 65px;
@@ -305,27 +294,27 @@ main{
 	flex-direction: row;
 	justify-content: space-between;
 }
-#exp-mainPic{
+#exp-mainPic {
 	width: 564px;
 	height: inherit;
 	background: url("../images/image-man-eating.webp") center/563px no-repeat;
 }
-#exp-text{
+#exp-text {
 	width: 465px;
 	height: inherit;
 	padding-top: 184px;
 }
-#exp-text h2{
+#exp-text h2 {
 	width: inherit;
 	height: 106px;
 }
-#exp-text p{
+#exp-text p {
 	width: inherit;
 	height: 168px;
 	margin: 35px 0px 0px;
 }
 /*------------------------ HEALTH TIPS ------------------------*/
-#healthTips{
+#healthTips {
 	width: 1392px;
 	height: 402px;
 	display: flex;
@@ -334,29 +323,29 @@ main{
 	margin-top: 96px;
 	padding: 72px 116px 0px;
 	border-radius: 35px;
-	background: linear-gradient(to left,hsla(216,95.2%,91.8%,0.2),hsla(183,95.2%,91.8%,0));
+	background: linear-gradient(to left, hsla(216, 95.2%, 91.8%, 0.2), hsla(183, 95.2%, 91.8%, 0));
 }
-#eating-pic{
+#eating-pic {
 	background: url("../images/icon-eating.svg") center/64px no-repeat;
 }
-#exercise-pic{
+#exercise-pic {
 	background: url("../images/icon-exercise.svg") center/64px no-repeat;
 }
-#sleeping-pic{
+#sleeping-pic {
 	background: url("../images/icon-sleep.svg") center/64px no-repeat;
 }
-.tip{
+.tip {
 	width: 365px;
 	height: 234px;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 }
-.tip-pic{
+.tip-pic {
 	width: 64px;
 	height: 64px;
 }
-.tip-info{
+.tip-info {
 	width: inherit;
 	height: 125px;
 	display: flex;
@@ -365,17 +354,17 @@ main{
 	text-align: left;
 	margin-top: 45px;
 }
-.tip-info h2{
+.tip-info h2 {
 	width: inherit;
 	height: 29px;
 }
-.tip-info p{
+.tip-info p {
 	width: inherit;
 	height: 72px;
 	margin: 24px 0px 0px;
 }
 /*------------------------ LIMITATIONS ------------------------*/
-#limitations{
+#limitations {
 	width: 1160px;
 	height: 704px;
 	margin-top: 120px;
@@ -383,63 +372,92 @@ main{
 	flex-wrap: wrap;
 	background: url("../images/pattern-curved-line-right.svg") 165px 251px/95px no-repeat;
 }
-#limit-info{
+#limit-info {
 	width: 564px;
 	height: 184px;
 }
-
-.limit{
+.limit {
 	width: 365px;
 	padding: 32px;
 	border-radius: 32px;
 	background-color: white;
-	box-shadow: 16px 32px 56px 0px hsla(210.9,40%,68.6%,0.25);
+	box-shadow: 16px 32px 56px 0px hsla(210.9, 40%, 68.6%, 0.25);
 }
-.limit div{
+.limit div {
 	width: 100%;
 	height: 32px;
-	display:flex;
+	display: flex;
 	align-items: center;
 	padding: 0px;
 }
-.limit h3{
-	margin: auto  0px auto 16px;
+.limit h3 {
+	margin: auto 0px auto 16px;
 }
-.limit p{
+.limit p {
 	margin: 16px 0px 0px;
 	padding: 0px;
 }
-.short{
+.short {
 	height: 184px;
 }
-.large{
+.large {
 	height: 232px;
 }
-#limit-gender{
+#limit-gender {
 	margin-left: 132px;
 	margin-bottom: 32px;
 }
-#limit-age{
+#limit-age {
 	margin-left: 398px;
 	margin-bottom: 24px;
 }
-#limit-muscle{
+#limit-muscle {
 	margin-left: 32px;
 	margin-bottom: 24px;
 }
-#limit-pregancy{
+#limit-pregancy {
 	margin-left: 199px;
 }
-#limit-race{
+#limit-race {
 	margin-left: 32px;
 }
 /*############################################################################*/
 /*############################## TABLET VERSION ##############################*/
 /*############################################################################*/
-
 @media (min-width: 768px) and (max-width: 1023px) {}
-
 /*############################################################################*/
 /*############################## MOBILE VERSION ##############################*/
 /*############################################################################*/
-@media screen and (max-width:480px) {}
+@media screen and (max-width:480px) {
+	/*############################## GENERAL ##############################*/
+	h1 {
+		font-size: 48px;
+	}
+	/*############################## HEADER ##############################*/
+	header {
+		width: 100vw;
+		height: 640px;
+		padding: 0px;
+	}
+	/*------------------------ INTRO ------------------------*/
+	#intro {
+		width: inherit;
+		align-items: center;
+		padding: 0px;
+	}
+	#intro-logo {
+		margin: 32px auto 24px;
+	}
+	#intro-title {
+		width: 327px;
+		height: 159px;
+		margin: 0px;
+		text-align: center;
+	}
+	#intro-text {
+		width: 327px;
+		height: 144px;
+		margin: 24px 0px 0px 0px;
+		text-align: center;
+	}
+}
