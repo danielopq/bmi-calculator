@@ -47,7 +47,8 @@ h4 {
 	font: 600 20px/110% 'Inter Semibold';
 }
 input[type="text"] {
-	width: 131px;
+	width: 100%;
+	margin-right: 24px;
 	height: 29px;
 	font: 600 24px/110% 'Inter Semibold';
 	color: #253347;
@@ -169,6 +170,9 @@ header {
 	flex-direction: row;
 	justify-content: space-between;
 }
+#cal-metricSystem div[class="txtField-border"] {
+	width: 238px;
+}
 #cal-imperialSystem {
 	height: 220px;
 	display: none;
@@ -180,6 +184,9 @@ header {
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
+}
+#cal-imperialSystem div[class="txtField-border"] {
+	width: 238px;
 }
 #cal-result {
 	background-color: #345FF6;
@@ -244,7 +251,6 @@ header {
 	align-items: center;
 }
 .txtField-border {
-	width: 238px;
 	height: 69px;
 	display: flex;
 	align-content: center;
@@ -459,5 +465,92 @@ main {
 		height: 144px;
 		margin: 24px 0px 0px 0px;
 		text-align: center;
+	}
+	/*------------------------ CALCULATOR ------------------------*/
+	#calculator {
+		width: 328px;
+		top: 471px;
+		margin: 0px auto;
+		padding: 24px;
+	}
+	#calculator > * {
+		width: 280px;
+	}
+	#calculator > div {
+		margin-top: 24px;
+	}
+	#cal-metricSystem {
+		height: 212px;
+		flex-direction: column;
+		align-items: center;
+	}
+	#cal-metricSystem div[class="txtField-border"] {
+		width: 280px;
+	}
+	#cal-imperialSystem {
+		height: 212px;
+	}
+	#cal-imperialSystem div[class="txtField-border"]{
+		width: 132px;
+	}
+	#cal-result {
+		background-color: #345FF6;
+		border-radius: 16px 83px 83px 16px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: left;
+		padding: 32px;
+		background: linear-gradient(to right, #345FF6, #587DFF)
+	}
+	#cal-result p {
+		color: white !important;
+	}
+	#result-welcome {
+		width: 436px;
+		height: 66px;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+	#result-welcome h3 {
+		width: inherit;
+		height: 29px;
+		color: white !important;
+		line-height: 29px !important;
+	}
+	#result-welcome p {
+		width: inherit;
+		height: 21px;
+		line-height: 21px;
+		margin-top: 16px;
+	}
+	#result-report {
+		width: 436px;
+		height: 102px;
+		display: none;
+		align-items: center;
+		justify-content: space-between;
+		flex-direction: row;
+	}
+	#result-report > * {
+		width: 206px;
+		height: inherit;
+	}
+	#report-container {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+	#BMI-text {
+		margin: 0px;
+	}
+	#BMI-number {
+		font: 600 64px/110% 'Inter Semibold';
+		margin: 0px;
+	}
+	.system-div {
+		width: 128px;
 	}
 }
