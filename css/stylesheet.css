@@ -494,36 +494,19 @@ main {
 		width: 132px;
 	}
 	#cal-result {
-		background-color: #345FF6;
-		border-radius: 16px 83px 83px 16px;
-		display: flex;
+		border-radius: 16px;
 		justify-content: center;
 		align-items: center;
-		text-align: left;
-		padding: 32px;
-		background: linear-gradient(to right, #345FF6, #587DFF)
-	}
-	#cal-result p {
-		color: white !important;
 	}
 	#result-welcome {
-		width: 436px;
-		height: 66px;
-		display: flex;
-		flex-direction: column;
+		width: 216px;
+		height: 257px;
+		align-content: center;
 		justify-content: flex-start;
+		text-align: center;
 	}
 	#result-welcome h3 {
-		width: inherit;
-		height: 29px;
-		color: white !important;
-		line-height: 29px !important;
-	}
-	#result-welcome p {
-		width: inherit;
-		height: 21px;
-		line-height: 21px;
-		margin-top: 16px;
+		margin-top: 75px;
 	}
 	#result-report {
 		width: 436px;
