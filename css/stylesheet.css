@@ -494,44 +494,39 @@ main {
 		width: 132px;
 	}
 	#cal-result {
+		height: 257px;
 		border-radius: 16px;
-		justify-content: center;
-		align-items: center;
+	}
+	#cal-result > div{
+		height: 193px;
 	}
 	#result-welcome {
 		width: 216px;
-		height: 257px;
 		align-content: center;
-		justify-content: flex-start;
 		text-align: center;
 	}
 	#result-welcome h3 {
-		margin-top: 75px;
+		margin-top: 40px;
 	}
 	#result-report {
-		width: 436px;
-		height: 102px;
-		display: none;
-		align-items: center;
-		justify-content: space-between;
-		flex-direction: row;
+		width: 216px;
+		flex-direction: column;
+		justify-content: flex-start!important;
 	}
 	#result-report > * {
-		width: 206px;
-		height: inherit;
+		width: 216px;
 	}
 	#report-container {
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-		justify-content: space-between;
-	}
-	#BMI-text {
-		margin: 0px;
+		height: 85px;
+		justify-content: flex-start;
 	}
 	#BMI-number {
-		font: 600 64px/110% 'Inter Semibold';
-		margin: 0px;
+		font-size: 48px;
+		margin-top: 8px;
+	}
+	#report-final{
+		height: 84px;
+		margin-top:24px;
 	}
 	.system-div {
 		width: 128px;
