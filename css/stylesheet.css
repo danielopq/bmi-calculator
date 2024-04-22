@@ -473,6 +473,8 @@ main {
 	#calculator {
 		width: 328px;
 		top: 471px;
+		left: 50%;
+		transform: translateX(-50%);
 		margin: 0px auto;
 		padding: 24px;
 	}
@@ -569,7 +571,6 @@ main {
 	height: 240px;
 	margin: 32px 0px 0px;
 }
-	
 	
 	/***************** BORRAR *********** */
 	#healthTips {display: none;}
