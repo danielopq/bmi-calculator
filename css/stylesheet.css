@@ -569,11 +569,36 @@ main {
 		height: 240px;
 		margin: 32px 0px 0px;
 	}
-
-	/***************** BORRAR *********** */
+	/*------------------------ HEALTH TIPS ------------------------*/
 	#healthTips {
-		display: none;
+		width: 375px;
+		height: 879px;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+		margin-top: 72px;
+		padding: 65px 0px 0px ;
 	}
+	#tip-exercise{
+		margin: 40px 0px 40px 0px;
+		height: 254px!important;
+	}
+	.tip {
+		width: 327px;
+		height: 221px;
+
+	}
+	.tip-info {
+		height: 125px;
+		margin-top: 32px;
+
+	}
+	.tip-info p {
+		width: inherit;
+		height: 72px;
+		margin: 24px 0px 0px;
+	}
+	/***************** BORRAR *********** */
 	#limitations {
 		display: none;
 	}
