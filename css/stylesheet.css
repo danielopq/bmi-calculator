@@ -621,11 +621,8 @@ main {
 		margin: 32px 0px 0px;
 	}
 	.limit {
-		width: 365px;
-		padding: 32px;
-		border-radius: 32px;
-		background-color: white;
-		box-shadow: 16px 32px 56px 0px hsla(210.9, 40%, 68.6%, 0.25);
+		width: 327px;
+		padding: 24px;
 	}
 	.limit div {
 		width: 100%;
