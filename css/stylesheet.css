@@ -424,7 +424,41 @@ main {
 /*############################################################################*/
 /*############################## TABLET VERSION ##############################*/
 /*############################################################################*/
-@media (min-width: 768px) and (max-width: 1023px) {}
+@media (min-width: 768px) and (max-width: 1023px) {
+	/*############################## GENERAL ##############################*/
+	h1 {
+		font-size: 48px;
+	}
+	/*############################## HEADER ##############################*/
+	header {
+		width: 768px;
+		height: 640px;
+		padding: 0px;
+	}
+	/*------------------------ INTRO ------------------------*/
+	#intro {
+		width: 768px;
+		align-items: center;
+		padding: 32px 0px 0px 0px;
+	}
+	#intro-logo {
+		width: 40px;
+		height: 40px;
+		background: url("../images/logo.svg") center/40px no-repeat;
+	}
+	#intro-title {
+		width: 686px;
+		height: 106px;
+		margin: 40px 0px 0px;
+		text-align: center;
+	}
+	#intro-text {
+		width: 686px;
+		height: 96px;
+		margin: 24px 0px 0px;
+		text-align: center;
+	}
+}
 /*############################################################################*/
 /*############################## MOBILE VERSION ##############################*/
 /*############################################################################*/
@@ -602,7 +636,7 @@ main {
 		background: none;
 		margin-bottom: 56px;
 	}
-	#limitations div[class="limit"]{
+	#limitations div[class="limit"] {
 		margin: 16px auto 0px;
 	}
 	#limit-info {
@@ -611,11 +645,11 @@ main {
 		text-align: center;
 		margin-bottom: 56px;
 	}
-	#limit-info h2{
+	#limit-info h2 {
 		height: 35px;
 		margin: 0px;
 	}
-	#limit-info p{
+	#limit-info p {
 		height: 144px;
 		margin: 32px 0px 0px;
 	}
