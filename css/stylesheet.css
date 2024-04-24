@@ -68,7 +68,7 @@ input[type="radio"] {
 	border-radius: 50%;
 	border: solid 1px #D8E2E7;
 	background-color: white;
-	margin-right: 18px;
+	margin:0px 18px 0px 0px;
 }
 input[type="radio"]:checked:before {
 	content: '';
@@ -457,6 +457,51 @@ main {
 		height: 96px;
 		margin: 24px 0px 0px;
 		text-align: center;
+	}
+	/*------------------------ CALCULATOR ------------------------*/
+	#calculator {
+		width: 686px;
+		top: 354px;
+		left: 50%;
+		transform: translateX(-50%);
+		margin: 0px;
+	}
+	#calculator > * {
+		width: 622px;
+	}
+	#metric {
+		margin-right: 24px;
+	}
+	#cal-metricSystem {
+		height: 98px;
+	}
+	#cal-metricSystem div[class="txtField-border"] {
+		width: 299px;
+	}
+	#cal-imperialSystem div[class="txtField-border"] {
+		width: 299px;
+	}
+	#cal-result{
+		height: 149px;
+	}
+	#result-report {
+		width: 558px;
+		height: 85px;
+	}
+	#result-report > * {
+		width: 267px;
+	}
+	#BMI-text {
+		margin: 0px;
+	}
+	#BMI-number {
+		font-size: 48px;
+	}
+	.system-div {
+		width: 299px;
+	}
+	.txtField-border p {
+		font-size: 14px;
 	}
 }
 /*############################################################################*/
