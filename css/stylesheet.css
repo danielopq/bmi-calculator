@@ -522,9 +522,9 @@ main {
 		background: url("../images/image-man-eating.webp") -116px 0px/435px no-repeat;
 	}
 	#exp-text {
-		width: 465px;
-		height: inherit;
-		padding-top: 184px;
+		width: 331px;
+		padding-top: 35px;
+		margin-left: 75px;
 	}
 	#exp-text h2 {
 		width: inherit;
