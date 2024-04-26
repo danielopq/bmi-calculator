@@ -507,17 +507,15 @@ main {
 	main {
 		width: 768px;
 		height: 2069px;
-		margin: 96px auto 200px auto;
+		margin: 180px auto 200px auto;
 		background: none;
 	}
 	/*------------------------ EXPLANATION ------------------------*/
 	#explanation {
-		width: 1160px;
-		height: 533px;
-		margin-top: 65px;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
+		width: 768px;
+		height: 411px;
+		margin-top: 96px;
+		justify-content: flex-start;
 	}
 	#exp-mainPic {
 		width: 564px;
