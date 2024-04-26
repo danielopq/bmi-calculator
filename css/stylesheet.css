@@ -518,9 +518,8 @@ main {
 		justify-content: flex-start;
 	}
 	#exp-mainPic {
-		width: 564px;
-		height: inherit;
-		background: url("../images/image-man-eating.webp") center/563px no-repeat;
+		width: 295px;
+		background: url("../images/image-man-eating.webp") -116px 0px/435px no-repeat;
 	}
 	#exp-text {
 		width: 465px;
