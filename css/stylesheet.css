@@ -429,6 +429,9 @@ main {
 	h1 {
 		font-size: 48px;
 	}
+	h2 {
+		font-size: 32px;
+	}
 	/*############################## HEADER ##############################*/
 	header {
 		width: 768px;
@@ -518,8 +521,9 @@ main {
 		justify-content: flex-start;
 	}
 	#exp-mainPic {
-		width: 295px;
-		background: url("../images/image-man-eating.webp") -116px 0px/435px no-repeat;
+		width: 435px;
+		margin-left: -116px;
+		background: url("../images/image-man-eating.webp") 0px 0px/435px no-repeat;
 	}
 	#exp-text {
 		width: 331px;
@@ -528,12 +532,60 @@ main {
 	}
 	#exp-text h2 {
 		width: inherit;
-		height: 106px;
+		height: 70px;
 	}
 	#exp-text p {
 		width: inherit;
 		height: 168px;
 		margin: 35px 0px 0px;
+	}
+	/*------------------------ HEALTH TIPS ------------------------*/
+	#healthTips {
+		width: 100vw;
+		height: 503px;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding: 0px;
+		border-radius: 0px;
+	}
+	#eating-pic {
+		background: url("../images/icon-eating.svg") center/64px no-repeat;
+	}
+	#exercise-pic {
+		background: url("../images/icon-exercise.svg") center/64px no-repeat;
+	}
+	#sleeping-pic {
+		background: url("../images/icon-sleep.svg") center/64px no-repeat;
+	}
+	.tip {
+		width: 365px;
+		height: 234px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.tip-pic {
+		width: 64px;
+		height: 64px;
+	}
+	.tip-info {
+		width: inherit;
+		height: 125px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		text-align: left;
+		margin-top: 45px;
+	}
+	.tip-info h2 {
+		width: inherit;
+		height: 29px;
+	}
+	.tip-info p {
+		width: inherit;
+		height: 72px;
+		margin: 24px 0px 0px;
 	}
 }
 /*############################################################################*/
