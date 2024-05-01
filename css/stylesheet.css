@@ -24,9 +24,6 @@ body {
 	margin: 0px;
 	padding: 0px;
 }
-body * {
-	/*border: solid 1px red;*/
-}
 h1, h2, h3, h4 {
 	color: #253347;
 	margin: 0px;
@@ -283,7 +280,7 @@ header {
 /*############################## MAIN ##############################*/
 main {
 	width: 1440px;
-	height: 1907px;
+	height: 2100px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -577,7 +574,7 @@ main {
 	#limitations {
 		width: 700px;
 		height: 963px;
-		margin-top: 96px;
+		margin-top: 120px;
 		background: none;
 	}
 	#limit-info {
