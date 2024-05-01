@@ -504,12 +504,12 @@ main {
 		width: 299px;
 	}
 	.txtField-border p {
-		font-size: 14px;
+		font-size: 24px;
 	}
 	/*############################## MAIN ##############################*/
 	main {
 		width: 768px;
-		height: 2069px;
+		height: 1950px;
 		margin: 180px auto 200px auto;
 		background: none;
 	}
