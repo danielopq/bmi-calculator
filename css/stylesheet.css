@@ -587,12 +587,12 @@ main {
 		height: 139px;
 		text-align: center;
 	}
+	#limit-info p{
+		margin-top: 32px;
+	}
 	.limit {
-		width: 365px;
-		padding: 32px;
-		border-radius: 32px;
-		background-color: white;
-		box-shadow: 16px 32px 56px 0px hsla(210.9, 40%, 68.6%, 0.25);
+		width: 335px;
+		height: 232px;
 	}
 	.limit div {
 		width: 100%;
