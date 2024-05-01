@@ -379,10 +379,13 @@ main {
 	width: 564px;
 	height: 184px;
 }
+#limit-info p{
+	margin-top: 35px;
+}
 .limit {
 	width: 365px;
 	padding: 32px;
-	border-radius: 32px;
+	border-radius: 16px;
 	background-color: white;
 	box-shadow: 16px 32px 56px 0px hsla(210.9, 40%, 68.6%, 0.25);
 }
