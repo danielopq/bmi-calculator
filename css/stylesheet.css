@@ -322,7 +322,7 @@ main {
 /*------------------------ HEALTH TIPS ------------------------*/
 #healthTips {
 	width: 1392px;
-	height: 402px;
+	height: 503px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
