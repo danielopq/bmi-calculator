@@ -549,7 +549,6 @@ main {
 		padding: 60px 0px;
 		border-radius: 0px;
 	}
-
 	.tip {
 		width: 686px;
 		height: 101px;
@@ -573,6 +572,58 @@ main {
 		width: inherit;
 		height: 72px;
 		margin: 24px 0px 0px;
+	}
+	/*------------------------ LIMITATIONS ------------------------*/
+	#limitations {
+		width: 686px;
+		height: 963px;
+		margin-top: 96px;
+		display: flex;
+		flex-wrap: wrap;
+		background: none;
+	}
+	#limit-info {
+		width: 564px;
+		height: 184px;
+	}
+	.limit {
+		width: 365px;
+		padding: 32px;
+		border-radius: 32px;
+		background-color: white;
+		box-shadow: 16px 32px 56px 0px hsla(210.9, 40%, 68.6%, 0.25);
+	}
+	.limit div {
+		width: 100%;
+		height: 32px;
+		display: flex;
+		align-items: center;
+		padding: 0px;
+	}
+	.limit h3 {
+		margin: auto 0px auto 16px;
+	}
+	.limit p {
+		margin: 16px 0px 0px;
+		padding: 0px;
+	}
+	#limit-gender {
+		margin-left: 132px;
+		margin-bottom: 32px;
+	}
+	#limit-age {
+		margin-left: 398px;
+		margin-bottom: 24px;
+	}
+	#limit-muscle {
+		margin-left: 32px;
+		margin-bottom: 24px;
+	}
+	#limit-pregancy {
+		margin-left: 199px;
+	}
+	#limit-race {
+		margin-left: 32px;
 	}
 }
 /*############################################################################*/
