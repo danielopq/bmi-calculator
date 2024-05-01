@@ -212,7 +212,12 @@ function getReport(mSystem) {
 		userHeight = document.getElementById("cm").value;
 		idealWeight += getIdealWeight(mSystem,userHeight);
 	}else{
-		userHeight = (parseInt(document.getElementById("ft").value * 12))+parseInt(document.getElementById("in").value);
+		if(document.getElementById("in").value == ""){
+			userHeight = parseInt(document.getElementById("ft").value * 12);
+		}else{
+			userHeight = (parseInt(document.getElementById("ft").value * 12))+parseInt(document.getElementById("in").value);
+		}
+		
 		idealWeight += getIdealWeight(mSystem,userHeight);
 	}
 	document.getElementById("result-welcome").style.display = "none";
