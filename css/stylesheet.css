@@ -583,8 +583,9 @@ main {
 		background: none;
 	}
 	#limit-info {
-		width: 564px;
-		height: 184px;
+		width: inherit;
+		height: 139px;
+		text-align: center;
 	}
 	.limit {
 		width: 365px;
