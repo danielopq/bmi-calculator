@@ -19,8 +19,8 @@ Responsive website that calculates your BMI. It is optimized for desktop (1440px
 
 
 - Desktop version: [https://github.com/danielopq/bmi-calculator/blob/main/screenshots/desktop.png]
-- Tablet version: [https://github.com/danielopq/bmi-calculator/main/screenshots/tablet.png]
-- Mobile version: [https://github.com/danielopq/bmi-calculator/main/screenshots/mobile.png]
+- Tablet version: [https://github.com/danielopq/bmi-calculator/blob/main/screenshots/tablet.png]
+- Mobile version: [https://github.com/danielopq/bmi-calculator/blob/main/screenshots/mobile.png]
 
 
 
