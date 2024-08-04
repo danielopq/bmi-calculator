@@ -25,7 +25,7 @@ A responsive website that calculates your BMI. Optimized for desktop (1440px), t
 
 ### Links
 
-- Live Site URL: [https://danielmartinez.co.uk/projects/bmi-calculator]
+- Live Site URL: [https://danielopq.github.io/bmi-calculator]
 
 ## My process
 
