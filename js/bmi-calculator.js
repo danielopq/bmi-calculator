@@ -9,6 +9,7 @@
 	document.getElementById("imperial-rad").addEventListener('click', changeMetricSystem, false);
 	document.addEventListener('keyup', validateParameters, false);
 })()
+
 const metric = [
 	{ height: 150, minimunWeight: 45.0, maximumWeight: 56.3 },
 	{ height: 151, minimunWeight: 45.6, maximumWeight: 57.0 },
@@ -267,6 +268,7 @@ function resetColor() {
 	document.getElementById("kg").style.backgroundColor = "white";
 	document.getElementById("kg-container").style.backgroundColor = "white";
 }
+
 /**
 *Resets the values of text field parameters to 0.
 */
