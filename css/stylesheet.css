@@ -1,20 +1,24 @@
 @charset "utf-8";
+
 @font-face {
 	font-family: 'Inter Semibold';
 	src: url("../fonts/Inter-SemiBold.woff")format('woff');
 	font-style: normal;
 	font-weight: 600;
 }
+
 @font-face {
 	font-family: 'Inter Regular';
 	src: url("../fonts/Inter-Regular.woff") format('woff');
 	font-style: normal;
 	font-weight: 400;
 }
+
 /*############################## GENERAL ##############################*/
 * {
 	box-sizing: border-box;
 }
+
 body {
 	width: 100vw;
 	height: 100%;
@@ -24,23 +28,36 @@ body {
 	margin: 0px;
 	padding: 0px;
 }
-p{
+
+p {
 	padding: 0px;
 }
-h1, h2, h3 {
+
+h1,
+h2,
+h3,
+h4 {
 	color: #253347;
 	margin: 0px;
 	padding: 0px;
 }
+
 h1 {
 	font: 600 64px/110% 'Inter Semibold';
 	letter-spacing: -0.05em;
 }
+
 h2 {
+	font: 600 48px/1 'Inter Semibold';
+	letter-spacing: -2.4px;
+}
+
+h3 {
 	font: 600 24px/1 'Inter Semibold';
 	letter-spacing: -1.2px;
 }
-h3 {
+
+h4 {
 	font: 600 20px/110% 'Inter Semibold';
 	letter-spacing: -1px;
 }
@@ -53,13 +70,16 @@ input[type="text"] {
 	color: #253347;
 	border: none;
 }
+
 input[type="text"] {
 	outline: none;
 }
+
 ::placeholder {
 	color: #253347;
 	opacity: 1;
 }
+
 input[type="radio"] {
 	appearance: none;
 	width: 31px;
@@ -69,6 +89,7 @@ input[type="radio"] {
 	background-color: white;
 	margin: 0px 18px 0px 0px;
 }
+
 input[type="radio"]:checked:before {
 	content: '';
 	display: block;
@@ -78,32 +99,40 @@ input[type="radio"]:checked:before {
 	border-radius: 50%;
 	background-color: hsla(227, 92%, 58%, 100%);
 }
+
 input[type="radio"]:checked {
 	background-color: hsla(227, 92%, 58%, 15%);
 	border: none;
 }
+
 input[type="radio"]:hover {
 	cursor: pointer;
 	border-color: #345FF6;
 }
+
 body p {
 	color: #5E6E85;
 }
+
 .textSmall {
 	font: 400 14px/150% 'Inter Regular';
 }
+
 .textMedium {
 	font: 400 16px/150% 'Inter Regular';
 }
+
 .textMediumBold {
 	font: 400 16px/150% 'Inter Semibold';
 }
+
 /*############################## HEADER ##############################*/
 header {
 	width: 1440px;
 	height: 737px;
 	padding: 0px 24px;
 }
+
 /*------------------------ INTRO ------------------------*/
 #intro {
 	width: 978px;
@@ -115,11 +144,13 @@ header {
 	background: linear-gradient(-45deg, hsla(216, 95.2%, 91.8%, 1), hsla(183, 95.2%, 91.8%, 0));
 	border-radius: 0px 0px 35px 35px;
 }
+
 #intro-logo {
 	width: 64px;
 	height: 64px;
 	background: url("../images/logo.svg");
 }
+
 #intro-title {
 	width: 564px;
 	height: 140px;
@@ -127,12 +158,14 @@ header {
 	padding: 0px;
 	text-align: left;
 }
+
 #intro-text {
 	width: 465px;
 	height: 96px;
 	padding: 0px;
 	margin: 35px 0px 0px;
 }
+
 /*------------------------ CALCULATOR ------------------------*/
 #calculator {
 	width: 564px;
@@ -147,48 +180,59 @@ header {
 	background-color: white;
 	box-shadow: 16px 32px 56px 0px hsla(210.9, 40%, 68.6%, 0.25);
 }
-#calculator > * {
+
+#calculator>* {
 	width: 500px;
 }
-#calculator > div {
+
+#calculator>div {
 	margin-top: 32px;
 }
+
 #cal-mainLabel {
 	height: 29px;
 	text-align: left;
 }
+
 #cal-systemSelect {
 	height: 31px;
 	display: flex;
 	flex-direction: row;
 }
+
 #metric {
 	margin-right: 24px;
 }
+
 #cal-metricSystem {
 	height: 98px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 }
+
 #cal-metricSystem div[class="txtField-border"] {
 	width: 238px;
 }
+
 #cal-imperialSystem {
 	height: 220px;
 	display: none;
 	flex-direction: column;
 	justify-content: space-between;
 }
-#cal-imperialSystem > div {
+
+#cal-imperialSystem>div {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
 }
+
 #cal-imperialSystem div[class="txtField-border"] {
 	width: 238px;
 }
+
 #cal-result {
 	background-color: #345FF6;
 	border-radius: 16px 83px 83px 16px;
@@ -199,9 +243,11 @@ header {
 	padding: 32px;
 	background: linear-gradient(to right, #345FF6, #587DFF)
 }
+
 #cal-result p {
 	color: white !important;
 }
+
 #result-welcome {
 	width: 436px;
 	height: 66px;
@@ -209,18 +255,22 @@ header {
 	flex-direction: column;
 	justify-content: flex-start;
 }
-#result-welcome h2 {
+
+#welcome-heading {
 	width: inherit;
 	height: 29px;
-	color: white !important;
-	line-height: 29px !important;
+	color: white;
+	font: 600 24px/29px 'Inter Semibold';
+	letter-spacing: -1.2px;
 }
+
 #result-welcome p {
 	width: inherit;
 	height: 21px;
 	line-height: 21px;
 	margin-top: 16px;
 }
+
 #result-report {
 	width: 436px;
 	height: 102px;
@@ -229,41 +279,50 @@ header {
 	justify-content: space-between;
 	flex-direction: row;
 }
-#result-report > * {
+
+#result-report>* {
 	width: 206px;
 	height: inherit;
 }
+
 #report-container {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 	justify-content: space-between;
 }
+
 #BMI-text {
 	margin: 0px;
 }
+
 #BMI-number {
 	font: 600 64px/110% 'Inter Semibold';
 	margin: 0px;
 }
+
 .system-div {
 	width: 238px;
 	display: flex;
 	align-items: center;
 }
+
 .txtField-border {
 	height: 69px;
 	display: flex;
 	align-content: center;
 	justify-content: space-between;
-	border: solid 1px #D8E2E7;
+	border: solid 1px #253347;
 	border-radius: 12px;
 	margin-top: 8px;
 	padding: 20px 24px;
+	overflow: hidden;
 }
+
 .txtField-border:hover {
 	border-color: #345FF6;
 }
+
 .txtField-border p {
 	width: 40px;
 	height: 29px;
@@ -272,15 +331,18 @@ header {
 	font: 600 24px/110% 'Inter Semibold';
 	text-align: left;
 }
+
 .parameter {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
 	height: 98px;
 }
+
 .parameterLabel {
 	color: #5E6E85;
 }
+
 /*############################## MAIN ##############################*/
 main {
 	width: 1440px;
@@ -292,6 +354,7 @@ main {
 	margin: 0px auto 119px auto;
 	background: url("../images/pattern-curved-line-left.svg") 1191px 0px/86px no-repeat;
 }
+
 /*------------------------ EXPLANATION ------------------------*/
 #explanation {
 	width: 1160px;
@@ -301,25 +364,30 @@ main {
 	flex-direction: row;
 	justify-content: space-between;
 }
+
 #exp-mainPic {
 	width: 564px;
 	height: inherit;
 	background: url("../images/image-man-eating.webp") center/563px no-repeat;
 }
+
 #exp-text {
 	width: 465px;
 	height: inherit;
 	padding-top: 184px;
 }
+
 #exp-text h2 {
 	width: inherit;
 	height: 106px;
 }
+
 #exp-text p {
 	width: inherit;
 	height: 168px;
 	margin: 35px 0px 0px;
 }
+
 /*------------------------ HEALTH TIPS ------------------------*/
 #healthTips {
 	width: 1392px;
@@ -332,15 +400,19 @@ main {
 	border-radius: 35px;
 	background: linear-gradient(to left, hsla(216, 95.2%, 91.8%, 0.2), hsla(183, 95.2%, 91.8%, 0));
 }
+
 #eating-pic {
 	background: url("../images/icon-eating.svg") center/64px no-repeat;
 }
+
 #exercise-pic {
 	background: url("../images/icon-exercise.svg") center/64px no-repeat;
 }
+
 #sleeping-pic {
 	background: url("../images/icon-sleep.svg") center/64px no-repeat;
 }
+
 .tip {
 	width: 365px;
 	height: 234px;
@@ -348,10 +420,12 @@ main {
 	flex-direction: column;
 	align-items: flex-start;
 }
+
 .tip-pic {
 	width: 64px;
 	height: 64px;
 }
+
 .tip-info {
 	width: inherit;
 	height: 125px;
@@ -361,15 +435,18 @@ main {
 	text-align: left;
 	margin-top: 45px;
 }
+
 .tip-info h2 {
 	width: inherit;
 	height: 29px;
 }
+
 .tip-info p {
 	width: inherit;
 	height: 72px;
 	margin: 24px 0px 0px;
 }
+
 /*------------------------ LIMITATIONS ------------------------*/
 #limitations {
 	width: 1160px;
@@ -379,13 +456,16 @@ main {
 	flex-wrap: wrap;
 	background: url("../images/pattern-curved-line-right.svg") 165px 251px/95px no-repeat;
 }
+
 #limit-info {
 	width: 564px;
 	height: 184px;
 }
-#limit-info p{
+
+#limit-info p {
 	margin-top: 35px;
 }
+
 .limit {
 	width: 365px;
 	padding: 32px;
@@ -393,6 +473,7 @@ main {
 	background-color: white;
 	box-shadow: 16px 32px 56px 0px hsla(210.9, 40%, 68.6%, 0.25);
 }
+
 .limit div {
 	width: 100%;
 	height: 32px;
@@ -400,71 +481,87 @@ main {
 	align-items: center;
 	padding: 0px;
 }
+
 .limit h4 {
 	margin: auto 0px auto 16px;
 }
+
 .limit p {
 	margin: 16px 0px 0px;
 	padding: 0px;
 }
+
 #limit-gender {
 	margin-left: 132px;
 	margin-bottom: 32px;
 }
+
 #limit-age {
 	margin-left: 398px;
 	margin-bottom: 24px;
 }
+
 #limit-muscle {
 	margin-left: 32px;
 	margin-bottom: 24px;
 }
+
 #limit-pregancy {
 	margin-left: 199px;
 }
+
 #limit-race {
 	margin-left: 32px;
 }
+
 /*############################################################################*/
 /*############################## TABLET VERSION ##############################*/
 /*############################################################################*/
 @media (min-width: 768px) and (max-width: 1023px) {
+
 	/*############################## GENERAL ##############################*/
 	h1 {
 		font-size: 48px;
 	}
-	h2 {
+
+	h3 {
 		font-size: 32px;
 	}
+
 	/*############################## HEADER ##############################*/
 	header {
 		width: 768px;
 		height: 640px;
 		padding: 0px;
 	}
+
 	/*------------------------ INTRO ------------------------*/
 	#intro {
 		width: 768px;
 		align-items: center;
 		padding: 32px 0px 0px 0px;
 	}
+
 	#intro-logo {
 		width: 40px;
 		height: 40px;
 		background: url("../images/logo.svg") center/40px no-repeat;
 	}
+
 	#intro-title {
 		width: 686px;
 		height: 106px;
 		margin: 40px 0px 0px;
 		text-align: center;
 	}
+
 	#intro-text {
 		width: 686px;
 		height: 96px;
 		margin: 24px 0px 0px;
 		text-align: center;
 	}
+
 	/*------------------------ CALCULATOR ------------------------*/
 	#calculator {
 		width: 686px;
@@ -473,43 +570,56 @@ main {
 		transform: translateX(-50%);
 		margin: 0px;
 	}
-	#calculator > * {
+
+	#calculator>* {
 		width: 622px;
 	}
+
 	#metric {
 		margin-right: 24px;
 	}
+
 	#cal-metricSystem {
 		height: 98px;
 	}
+
 	#cal-metricSystem div[class="txtField-border"] {
 		width: 299px;
 	}
+
 	#cal-imperialSystem div[class="txtField-border"] {
 		width: 299px;
 	}
+
 	#cal-result {
 		height: 149px;
 	}
+
 	#result-report {
 		width: 558px;
 		height: 85px;
 	}
-	#result-report > * {
+
+	#result-report>* {
 		width: 267px;
 	}
+
 	#BMI-text {
 		margin: 0px;
 	}
+
 	#BMI-number {
 		font-size: 48px;
 	}
+
 	.system-div {
 		width: 299px;
 	}
+
 	.txtField-border p {
 		font-size: 24px;
 	}
+
 	/*############################## MAIN ##############################*/
 	main {
 		width: 768px;
@@ -517,6 +627,7 @@ main {
 		margin: 180px auto 200px auto;
 		background: none;
 	}
+
 	/*------------------------ EXPLANATION ------------------------*/
 	#explanation {
 		width: 768px;
@@ -524,25 +635,30 @@ main {
 		margin-top: 96px;
 		justify-content: flex-start;
 	}
+
 	#exp-mainPic {
 		width: 435px;
 		margin-left: -116px;
 		background: url("../images/image-man-eating.webp") 0px 0px/435px no-repeat;
 	}
+
 	#exp-text {
 		width: 331px;
 		padding-top: 35px;
 		margin-left: 75px;
 	}
+
 	#exp-text h2 {
 		width: inherit;
 		height: 70px;
 	}
+
 	#exp-text p {
 		width: inherit;
 		height: 168px;
 		margin: 35px 0px 0px;
 	}
+
 	/*------------------------ HEALTH TIPS ------------------------*/
 	#healthTips {
 		width: 100vw;
@@ -553,30 +669,41 @@ main {
 		padding: 60px 0px;
 		border-radius: 0px;
 	}
+
 	.tip {
 		width: 686px;
 		height: 101px;
 		flex-direction: row;
 		align-items: center;
 	}
+
 	.tip-pic {
 		width: 64px;
 		height: 64px;
 	}
+
 	.tip-info {
 		width: 582px;
 		height: inherit;
 		margin: 0px 0px 0px 40px;
 	}
-	.tip-info h2 {
+
+	.tip-info h3 {
 		width: inherit;
+		font-size: 24px;
 		height: 29px;
 	}
+
 	.tip-info p {
 		width: inherit;
 		height: 72px;
 		margin: 24px 0px 0px;
 	}
+
+	#tip-exercise {
+		margin: 40px 0px;
+	}
+
 	/*------------------------ LIMITATIONS ------------------------*/
 	#limitations {
 		width: 700px;
@@ -584,68 +711,86 @@ main {
 		margin-top: 120px;
 		background: none;
 	}
+
 	#limit-info {
 		width: inherit;
 		height: 139px;
 		text-align: center;
 		margin-bottom: 56px;
 	}
-	#limit-info p{
+
+	#limit-info p {
 		margin-top: 32px;
 	}
+
 	.limit {
 		width: 335px;
 		height: 232px;
 	}
+
 	.limit p {
 		margin: 16px 0px 0px;
 		padding: 0px;
 	}
-	#limit-gender, #limit-age, #limit-muscle, #limit-pregancy {
+
+	#limit-gender,
+	#limit-age,
+	#limit-muscle,
+	#limit-pregancy {
 		margin: 0px 7px 24px;
 	}
+
 	#limit-race {
 		margin: 0px auto 0px;
 	}
 }
+
 /*############################################################################*/
 /*############################## MOBILE VERSION ##############################*/
 /*############################################################################*/
 @media screen and (max-width:480px) {
+
 	/*############################## GENERAL ##############################*/
 	h1 {
 		font-size: 48px;
 	}
+
 	h2 {
 		font-size: 32px;
 	}
+
 	/*############################## HEADER ##############################*/
 	header {
 		width: 100vw;
 		height: 640px;
 		padding: 0px;
 	}
+
 	/*------------------------ INTRO ------------------------*/
 	#intro {
 		width: inherit;
 		align-items: center;
 		padding: 0px;
 	}
+
 	#intro-logo {
 		margin: 32px auto 24px;
 	}
+
 	#intro-title {
 		width: 327px;
 		height: 159px;
 		margin: 0px;
 		text-align: center;
 	}
+
 	#intro-text {
 		width: 327px;
 		height: 144px;
 		margin: 24px 0px 0px 0px;
 		text-align: center;
 	}
+
 	/*------------------------ CALCULATOR ------------------------*/
 	#calculator {
 		width: 328px;
@@ -655,64 +800,81 @@ main {
 		margin: 0px auto;
 		padding: 24px;
 	}
-	#calculator > * {
+
+	#calculator>* {
 		width: 280px;
 	}
-	#calculator > div {
+
+	#calculator>div {
 		margin-top: 24px;
 	}
+
 	#cal-metricSystem {
 		height: 212px;
 		flex-direction: column;
 		align-items: center;
 	}
+
 	#cal-metricSystem div[class="txtField-border"] {
 		width: 280px;
 	}
+
 	#cal-imperialSystem {
 		height: 212px;
 	}
+
 	#cal-imperialSystem div[class="txtField-border"] {
 		width: 132px;
 	}
+
 	#cal-result {
 		height: 257px;
 		border-radius: 16px;
 	}
-	#cal-result > div {
+
+	#cal-result>div {
 		height: 193px;
 	}
+
 	#result-welcome {
 		width: 216px;
 		align-content: center;
 		text-align: center;
 	}
-	#result-welcome h2 {
+
+	#welcome-heading {
 		margin-top: 40px;
 	}
+
 	#result-report {
 		width: 216px;
 		flex-direction: column;
 		justify-content: flex-start !important;
 	}
-	#result-report > * {
+
+	#result-report>* {
 		width: 216px;
 	}
+
 	#report-container {
 		height: 85px;
 		justify-content: flex-start;
 	}
+
 	#BMI-number {
 		font-size: 48px;
 		margin-top: 8px;
 	}
+
 	#report-final {
 		height: 84px;
 		margin-top: 24px;
 	}
+
 	.system-div {
 		width: 128px;
 	}
+
 	/*############################## MAIN ##############################*/
 	main {
 		width: 375px;
@@ -720,6 +882,7 @@ main {
 		margin: 552px auto 100px auto;
 		background: none;
 	}
+
 	/*------------------------ EXPLANATION ------------------------*/
 	#explanation {
 		width: 375px;
@@ -728,24 +891,29 @@ main {
 		align-items: center;
 		justify-content: flex-start;
 	}
+
 	#exp-mainPic {
 		width: 375px;
 		height: 354px;
 		background-size: 375px;
 	}
+
 	#exp-text {
 		width: 328px;
 		height: 342px;
 		padding-top: 0px;
 		margin-top: 48px;
 	}
+
 	#exp-text h2 {
 		height: 70px;
 	}
+
 	#exp-text p {
 		height: 240px;
 		margin: 32px 0px 0px;
 	}
+
 	/*------------------------ HEALTH TIPS ------------------------*/
 	#healthTips {
 		width: 375px;
@@ -756,23 +924,28 @@ main {
 		margin-top: 72px;
 		padding: 65px 0px 0px;
 	}
+
 	#tip-exercise {
 		margin: 40px 0px 40px 0px;
 		height: 254px !important;
 	}
+
 	.tip {
 		width: 327px;
 		height: 221px;
 	}
+
 	.tip-info {
 		height: 125px;
 		margin-top: 32px;
 	}
+
 	.tip-info p {
 		width: inherit;
 		height: 72px;
 		margin: 24px 0px 0px;
 	}
+
 	/*------------------------ LIMITATIONS ------------------------*/
 	#limitations {
 		width: 327px;
@@ -785,23 +958,28 @@ main {
 		background: none;
 		margin-bottom: 56px;
 	}
+
 	#limitations div[class="limit"] {
 		margin: 16px auto 0px;
 	}
+
 	#limit-info {
 		width: inherit;
 		height: 211px;
 		text-align: center;
 		margin-bottom: 56px;
 	}
+
 	#limit-info h2 {
 		height: 35px;
 		margin: 0px;
 	}
+
 	#limit-info p {
 		height: 144px;
 		margin: 32px 0px 0px;
 	}
+
 	.limit {
 		width: 327px;
 		padding: 24px;
