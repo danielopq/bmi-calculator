@@ -24,9 +24,13 @@ body {
 	margin: 0px;
 	padding: 0px;
 }
+p{
+	padding: 0px;
+}
 h1, h2, h3 {
 	color: #253347;
 	margin: 0px;
+	padding: 0px;
 }
 h1 {
 	font: 600 64px/110% 'Inter Semibold';
@@ -34,10 +38,11 @@ h1 {
 }
 h2 {
 	font: 600 24px/1 'Inter Semibold';
-	letter-spacing: -0.05em;
+	letter-spacing: -1.2px;
 }
 h3 {
 	font: 600 20px/110% 'Inter Semibold';
+	letter-spacing: -1px;
 }
 
 input[type="text"] {
@@ -52,7 +57,7 @@ input[type="text"] {
 	outline: none;
 }
 ::placeholder {
-	color: #D8E2E7;
+	color: #253347;
 	opacity: 1;
 }
 input[type="radio"] {
@@ -60,7 +65,7 @@ input[type="radio"] {
 	width: 31px;
 	height: 31px;
 	border-radius: 50%;
-	border: solid 1px #D8E2E7;
+	border: solid 1px #253347;
 	background-color: white;
 	margin: 0px 18px 0px 0px;
 }
@@ -119,11 +124,13 @@ header {
 	width: 564px;
 	height: 140px;
 	margin: 127px 0px 0px;
+	padding: 0px;
 	text-align: left;
 }
 #intro-text {
 	width: 465px;
 	height: 96px;
+	padding: 0px;
 	margin: 35px 0px 0px;
 }
 /*------------------------ CALCULATOR ------------------------*/
