@@ -4,12 +4,6 @@
  * @date 2024-08-04
  */
 
-(() => {
-	document.getElementById("metric-rad").addEventListener('click', changeMetricSystem, false);
-	document.getElementById("imperial-rad").addEventListener('click', changeMetricSystem, false);
-	document.addEventListener('keyup', validateParameters, false);
-})()
-
 const metric = [
 	{ height: 150, minimunWeight: 45.0, maximumWeight: 56.3 },
 	{ height: 151, minimunWeight: 45.6, maximumWeight: 57.0 },
@@ -91,7 +85,7 @@ const imperial = [
 *Change the measurement system used.
 *@param {Event} event clicked radio button
 */
-function changeMetricSystem(event) {
+const changeMetricSystem = (event) => {
 	resetValues();
 	resetColor();
 	document.getElementById("result-report").style.display = 'none';
@@ -109,7 +103,7 @@ function changeMetricSystem(event) {
 *Validates whether the parameters are 0, blank, or contain non-numeric values and initializes the BMI calculator.
 *@param {Event} event pressed key
 */
-function validateParameters(event) {
+const validateParameters = (event)=> {
 	let valid = true;
 	let paramValue;
 	if (event.key === 'Enter') {
@@ -167,7 +161,7 @@ function validateParameters(event) {
 *@param {String} mSystem Measurement system selected by the user (metric or imperial).
 *@return {Number} body mass index.
 */
-function calculateBMI(mSystem) {
+const calculateBMI = (mSystem) =>{
 	let bmi;
 	let totalHeight = 0;
 	let totalWeight = 0;
@@ -187,7 +181,7 @@ function calculateBMI(mSystem) {
 *Shows the results on the website according to the BMI.
 *@param {String} mSystem Measurement system selected by the user (metric or imperial).
 */
-function getReport(mSystem) {
+const getReport = (mSystem) => {
 	let bmi = calculateBMI(mSystem);
 	let userHeight = 0;
 	let bmiResult = "Your BMI suggests ";
@@ -233,7 +227,7 @@ function getReport(mSystem) {
 *@param {Number} userHeight Height provided by the user.
 *@return {String} Minimum, and maximum recommended weight
 */
-function getIdealWeight(mSystem, userHeight) {
+const getIdealWeight = (mSystem, userHeight) => {
 	let idealWeight = "";
 	if (mSystem == "metric") {
 		for (let i = 0; i < metric.length; i++) {
@@ -254,7 +248,7 @@ function getIdealWeight(mSystem, userHeight) {
 /**
 *Resets the background color of text field parameters to white.
 */
-function resetColor() {
+const resetColor = () => {
 	document.getElementById("ft-container").style.backgroundColor = "white";
 	document.getElementById("ft").style.backgroundColor = "white";
 	document.getElementById("in").style.backgroundColor = "white";
@@ -272,7 +266,7 @@ function resetColor() {
 /**
 *Resets the values of text field parameters to 0.
 */
-function resetValues() {
+const resetValues = () => {
 	document.getElementById("cm").value = "";
 	document.getElementById("kg").value = "";
 	document.getElementById("ft").value = "";
@@ -280,3 +274,9 @@ function resetValues() {
 	document.getElementById("st").value = "";
 	document.getElementById("lbs").value = "";
 }
+
+(() => {
+	document.getElementById("metric-rad").addEventListener('click', changeMetricSystem, false);
+	document.getElementById("imperial-rad").addEventListener('click', changeMetricSystem, false);
+	document.addEventListener('keyup', validateParameters, false);
+})()

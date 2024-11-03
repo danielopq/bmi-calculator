@@ -105,9 +105,11 @@ input[type="radio"]:checked {
 	border: none;
 }
 
-input[type="radio"]:hover {
-	cursor: pointer;
-	border-color: #345FF6;
+@media(hover:hover){
+	input[type="radio"]:hover {
+		cursor: pointer;
+		border-color: #345FF6;
+	}
 }
 
 body p {
@@ -319,8 +321,10 @@ header {
 	overflow: hidden;
 }
 
-.txtField-border:hover {
-	border-color: #345FF6;
+@media(hover:hover){
+	.txtField-border:hover {
+		border-color: #345FF6;
+	}
 }
 
 .txtField-border p {
